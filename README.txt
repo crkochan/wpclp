@@ -43,6 +43,10 @@ syntax: wpclp [-f] [-e] [-n] <input rom filename> <patched rom filename>
         (30uS is the delay inserted by the newer williams driver code.)
         Specifying this option causes an extra 26 to 33uS delay to be inserted
         instead of 26uS. The extra delay might help with problem boards.
+   '-a' Optional 'automatically set version number' parameter.
+        Can be used to automatically set the version number without prompting.
+        For ALPHA-NUMERIC version numbers, the ALPHA will be 'Z'.
+        For MAJOR.MINOR version numbers, the MAJOR will be '9'.
 
 
 -f: force option
@@ -61,6 +65,11 @@ syntax: wpclp [-f] [-e] [-n] <input rom filename> <patched rom filename>
    and writing the new row/column values.
    It may help with problem boards that still exhibit ghosting even
    with the updated driver.
+
+-a: automatically set version number
+   Can be used to automatically set the version number without prompting.
+   For ALPHA-NUMERIC version numbers, the ALPHA will be 'Z'.
+   For MAJOR.MINOR version numbers, the MAJOR will be '9'.
 
 
 
